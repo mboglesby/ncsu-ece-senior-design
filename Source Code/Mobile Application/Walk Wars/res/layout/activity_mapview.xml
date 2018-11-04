@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <com.google.android.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/updateLocStatusTextView"
+        android:apiKey="0zglksO46JrEQTqto0F8p2Qt_d3LbV6eyv7SZdw"
+        android:clickable="true" >
+    </com.google.android.maps.MapView>
+	<!-- Laptop Debug API key: 0zglksO46JrHduInpr9X7kFJorL9iI-Ypm0dRLw -->
+	<!-- Desktop Debug API key: 0zglksO46JrFtGs0ofS5bC5SApd8i1Y4FoFS3QQ -->
+ 	<!-- Release API key: 0zglksO46JrEQTqto0F8p2Qt_d3LbV6eyv7SZdw -->
+    
+    <TextView
+        android:id="@+id/updateLocStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Latest Location: None"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ToggleButton
+        android:id="@+id/autoUpdateToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/manualUpdateButton"
+        android:layout_alignLeft="@+id/manualUpdateButton"
+        android:layout_alignParentRight="true"
+        android:checked="false"
+        android:onClick="onToggleClicked"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textOff="Auto Update Off"
+        android:textOn="Auto Update On" />
+
+    <Button
+        android:id="@+id/manualUpdateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/updateLocStatusTextView"
+        android:layout_alignParentRight="true"
+        android:text="Manual Update" />
+
+</RelativeLayout>

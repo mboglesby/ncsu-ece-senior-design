@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Walk Wars</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Walk Wars</string>
+    <string name="status">"Status: "</string>
+    <string name="incomplete">Incomplete</string>
+    <string name="zero">0</string>
+
+</resources>
